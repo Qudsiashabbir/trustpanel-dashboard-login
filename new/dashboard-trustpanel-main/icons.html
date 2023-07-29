@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    Now UI Dashboard by Creative Tim
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <!-- CSS Files -->
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../assets/css/now-ui-dashboard.css?v=1.5.0" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="../assets/demo/demo.css" rel="stylesheet" />
+</head>
+<style>
+  .wrapper{
+    display: flex;
+  }
+  .container .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+  .sidebarbg{
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; 
+
+  }
+/* This rule sets the background gradient based on the data-color attribute */
+/* This rule sets the background gradient based on the custom properties */
+/* Center the background image */
+.sidebar-wrapper, .logo{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; /* Required for pseudo-element positioning */
+}
+
+/* Create a pseudo-element for the gradient overlay */
+.sidebar-wrapper::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(0, 255, 0, 0.5), rgba(0, 0, 255, 0.5));
+}
+
+.logo{
+  height: 80px;
+  width: 150px;
+  align-items: center;
+  align-content: center;
+  padding: auto;
+  margin: auto;
+}
+
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.ticket-row {
+  display: flex; /* This makes the ticket cells appear in a row */
+  align-items: center; /* Optional: Align the content vertically */
+}
+
+.ticket-cell {
+  flex: 1; /* This allows each cell to grow and occupy equal width */
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  width: 80%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: #fff;
+}
+
+ /* Styles for the buttons in the card */
+ .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .button-container button {
+    width: 23%;
+    margin: 5px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  /* Styles for the form section */
+  .form-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .form-container label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .form-container input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .form-container button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }</style>
+<body>
+  <div class="wrapper">
+    <div class="sidebar sidebarbg"  >
+      
+   
+        <div class="sidebar-wrapper" id="sidebar-wrapper" style="background-image: url(/assets/img/bgi.jpg);">
+          <ul class="nav">
+            <div class="logo"><img src="/assets/img/TP logo centerlized white (1).png" alt="">          </div>
+            <li class="active ">
+              <a href="./dashboard.html">
+                <i class="now-ui-icons design_app"></i>
+                <p>Dashboard</p>
+              </a>
+            </li>
+            <li>
+              <a href="./icons.html">
+                <i class="now-ui-icons education_atom"></i>
+                <p>New Order</p>
+              </a>
+            </li>
+            <li>
+              <a href="./map.html">
+                <i class="now-ui-icons location_map-big"></i>
+                <p>Mass Orders</p>
+              </a>
+            </li>
+            <li>
+              <a href="./notifications.html">
+                <i class="now-ui-icons ui-1_bell-53"></i>
+                <p>Orders</p>
+              </a>
+            </li>
+            <li>
+              <a href="./user.html">
+                <i class="now-ui-icons users_single-02"></i>
+                <p>User Profile</p>
+              </a>
+            </li>
+            <li>
+              <a href="./tables.html">
+                <i class="now-ui-icons design_bullet-list-67"></i>
+                <p>Table List</p>
+              </a>
+            </li>
+            <li>
+              <a href="./typography.html">
+                <i class="now-ui-icons text_caps-small"></i>
+                <p>Typography</p>
+              </a>
+            </li>
+            <li class="active-pro">
+              <a href="./upgrade.html">
+                <i class="now-ui-icons arrows-1_cloud-download-93"></i>
+                <p>Upgrade to PRO</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="mymainContainer">
+        <div class="card">
+          <div class="button-container">
+            <button onclick="showForm('Instagram')">Instagram</button>
+            <button onclick="showForm('Facebook')">Facebook</button>
+            <button onclick="showForm('Youtube')">Youtube</button>
+            <button onclick="showForm('Twitter')">Twitter</button>
+            <button onclick="showForm('Spotify')">Spotify</button>
+            <button onclick="showForm('Tiktok')">Tiktok</button>
+            <button onclick="showForm('Linkedin')">Linkedin</button>
+            <button onclick="showForm('Google')">Google</button>
+            <button onclick="showForm('Telegram')">Telegram</button>
+            <button onclick="showForm('Discord')">Discord</button>
+            <button onclick="showForm('Snapchat')">Snapchat</button>
+            <button onclick="showForm('Twitch')">Twitch</button>
+            <button onclick="showForm('Website Traffic')">Website Traffic</button>
+            <button onclick="showForm('Reviews')">Reviews</button>
+            <button onclick="showForm('Other')">Other</button>
+            <button onclick="showForm('Everything')">Everything</button>
+          </div>
+        </div>
+        <div class="form-container" id="formContainer">
+          <form action="mailto:qudsia.shabbir32@gmail.com" method="post" enctype="text/plain">
+            <label for="buttonText">Selected Button Text:</label>
+            <input type="text" id="buttonText" name="buttonText" readonly>
+      
+            <label for="platformService">Platform Service:</label>
+            <select id="platformService" name="platformService">
+              <!-- The default option, other options will be added dynamically -->
+              <option value="" disabled selected>Select a service...</option>
+            </select>
+      
+            <label for="range">Number of Services (50-2500):</label>
+            <input type="number" id="range" name="range" min="50" max="2500" required>
+      
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script>
+        // Function to show the form and update the selected button text
+        function showForm(buttonText) {
+          document.getElementById("buttonText").value = buttonText;
+          const platformServiceDropdown = document.getElementById("platformService");
+    
+          // Clear any existing options
+          platformServiceDropdown.innerHTML = "";
+    
+          // Add different dropdown options based on the selected button
+          switch (buttonText) {
+            case "Instagram":
+              platformServiceDropdown.innerHTML = `
+                <option value="insta_likes">Instagram Likes</option>
+                <option value="insta_followers">Instagram Followers</option>
+                <option value="insta_comments">Instagram Comments</option>
+              `;
+              break;
+            case "Facebook":
+              platformServiceDropdown.innerHTML = `
+                <option value="fb_likes">Facebook Likes</option>
+                <option value="fb_comments">Facebook Comments</option>
+              `;
+              break;
+            case "Youtube":
+              platformServiceDropdown.innerHTML = `
+                <option value="yt_views">Youtube Views</option>
+                <option value="yt_subs">Youtube Subscribers</option>
+              `;
+              break;
+            case "Twitter":
+              platformServiceDropdown.innerHTML = `
+                <option value="twitter_followers">Twitter Followers</option>
+                <option value="twitter_likes">Twitter Likes</option>
+              `;
+              break;
+            case "Spotify":
+              platformServiceDropdown.innerHTML = `
+                <option value="spotify_plays">Spotify Plays</option>
+                <option value="spotify_followers">Spotify Followers</option>
+              `;
+              break;
+            case "Tiktok":
+              platformServiceDropdown.innerHTML = `
+                <option value="tiktok_likes">Tiktok Likes</option>
+                <option value="tiktok_followers">Tiktok Followers</option>
+              `;
+              break;
+            case "Linkedin":
+              platformServiceDropdown.innerHTML = `
+                <option value="linkedin_connections">LinkedIn Connections</option>
+                <option value="linkedin_posts">LinkedIn Posts</option>
+              `;
+              break;
+            case "Google":
+              platformServiceDropdown.innerHTML = `
+                <option value="google_reviews">Google Reviews</option>
+                <option value="google_followers">Google Followers</option>
+              `;
+              break;
+            case "Telegram":
+              platformServiceDropdown.innerHTML = `
+                <option value="telegram_members">Telegram Members</option>
+                <option value="telegram_likes">Telegram Likes</option>
+              `;
+              break;
+            case "Discord":
+              platformServiceDropdown.innerHTML = `
+                <option value="discord_members">Discord Members</option>
+                <option value="discord_likes">Discord Likes</option>
+              `;
+              break;
+            case "Snapchat":
+              platformServiceDropdown.innerHTML = `
+                <option value="snapchat_views">Snapchat Views</option>
+                <option value="snapchat_followers">Snapchat Followers</option>
+              `;
+              break;
+            case "Twitch":
+              platformServiceDropdown.innerHTML = `
+                <option value="twitch_views">Twitch Views</option>
+                <option value="twitch_followers">Twitch Followers</option>
+              `;
+              break;
+            case "Website Traffic":
+              platformServiceDropdown.innerHTML = `
+                <option value="website_traffic">Website Traffic</option>
+              `;
+              break;
+            case "Reviews":
+              platformServiceDropdown.innerHTML = `
+                <option value="product_reviews">Product Reviews</option>
+                <option value="service_reviews">Service Reviews</option>
+              `;
+              break;
+            case "Other":
+              platformServiceDropdown.innerHTML = `
+                <option value="other_service">Other Service</option>
+              `;
+              break;
+            case "Everything":
+              platformServiceDropdown.innerHTML = `
+                <option value="all_services">All Services</option>
+              `;
+              break;
+            default:
+              platformServiceDropdown.innerHTML = `<option value="">Select a service...</option>`;
+              break;
+          }
+        }
+      </script>
+  <script src="../assets/js/core/jquery.min.js"></script>
+  <script src="../assets/js/core/popper.min.js"></script>
+  <script src="../assets/js/core/bootstrap.min.js"></script>
+  <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  <!--  Google Maps Plugin    -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+  <!-- Chart JS -->
+  <script src="../assets/js/plugins/chartjs.min.js"></script>
+  <!--  Notifications Plugin    -->
+  <script src="../assets/js/plugins/bootstrap-notify.js"></script>
+  <!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="../assets/js/now-ui-dashboard.min.js?v=1.5.0" type="text/javascript"></script><!-- Now Ui Dashboard DEMO methods, don't include it in your project! -->
+  <script src="../assets/demo/demo.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Javascript method's body can be found in assets/js/demos.js
+      demo.initDashboardPageCharts();
+
+    });
+  </script>
+</body>
+</html>

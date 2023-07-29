@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    Now UI Dashboard by Creative Tim
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <!-- CSS Files -->
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../assets/css/now-ui-dashboard.css?v=1.5.0" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="../assets/demo/demo.css" rel="stylesheet" />
+</head>
+<style>
+    /* Styles for the container div */
+    #mycontainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+  
+    /* Styles for the card */
+    .card {
+      width: 80%;
+      padding: 20px;
+      border-radius: 8px;
+      
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding box shadow */
+  
+    }
+  
+    /* Styles for the form section */
+    .form-container {
+      text-align: center;
+    }
+  
+    .form-container h2 {
+      margin-bottom: 10px;
+    }
+  
+    .form-container textarea {
+      width: 100%;
+      height: 120px;
+      resize: none;
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+  
+    .form-container button[type="submit"] {
+      margin: 10px;
+      background: linear-gradient(to bottom right, #007bff, #00bfa5);
+  padding: 10px 20px;
+  border: none;
+  font-style: 16px;
+  color: #fff;
+  border-radius: 5px;
+      cursor: pointer;
+      width: 80%; /* Make the submit button full width */
+      margin-top: 15px;
+    }
+    .mass-order-button-container {
+      background-color: #f2f2f2; /* Slight background color for the container */
+      padding: 20px;
+    }
+    
+    .mass-order-button {
+      width: 20%;
+      margin: 10px;
+      background: linear-gradient(to bottom right, #007bff, #00bfa5);
+  padding: 10px 20px;
+  border: none;
+  font-style: 16px;
+  color: #fff;
+  border-radius: 5px;
+   /* Gradient background */
+      color: #fff;
+      text-align: center;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding box shadow */
+    }
+  .sidebarbg{
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; 
+
+  }
+
+.sidebar-wrapper, .logo{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; /* Required for pseudo-element positioning */
+}
+
+.sidebar-wrapper::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(0, 255, 0, 0.5), rgba(0, 0, 255, 0.5));
+}
+  .wrapper {
+    display:flex;
+  }
+
+.logo{
+  height: 80px;
+  width: 150px;
+  align-items: center;
+  align-content: center;
+  padding: auto;
+  margin: auto;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+</style>
+<body>
+  <div class="wrapper">
+    <div class="sidebar sidebarbg"  >
+      
+   
+        <div class="sidebar-wrapper" id="sidebar-wrapper" style="background-image: url(/assets/img/bgi.jpg);">
+          <ul class="nav">
+            <div class="logo"><img src="/assets/img/TP logo centerlized white (1).png" alt="">          </div>
+            <li class="active ">
+              <a href="./dashboard.html">
+                <i class="now-ui-icons design_app"></i>
+                <p>Dashboard</p>
+              </a>
+            </li>
+            <li>
+              <a href="./icons.html">
+                <i class="now-ui-icons education_atom"></i>
+                <p>New Order</p>
+              </a>
+            </li>
+            <li>
+              <a href="./map.html">
+                <i class="now-ui-icons location_map-big"></i>
+                <p>Mass Orders</p>
+              </a>
+            </li>
+            <li>
+              <a href="./notifications.html">
+                <i class="now-ui-icons ui-1_bell-53"></i>
+                <p>Orders</p>
+              </a>
+            </li>
+            <li>
+              <a href="./user.html">
+                <i class="now-ui-icons users_single-02"></i>
+                <p>User Profile</p>
+              </a>
+            </li>
+            <li>
+              <a href="./tables.html">
+                <i class="now-ui-icons design_bullet-list-67"></i>
+                <p>Table List</p>
+              </a>
+            </li>
+            <li>
+              <a href="./typography.html">
+                <i class="now-ui-icons text_caps-small"></i>
+                <p>Typography</p>
+              </a>
+            </li>
+            <li class="active-pro">
+              <a href="./upgrade.html">
+                <i class="now-ui-icons arrows-1_cloud-download-93"></i>
+                <p>Upgrade to PRO</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="mycontainer">
+        <div class="card">
+          <div class="mass-order-button-container"> <!-- Add a container for the "Mass Orders" button -->
+
+          
+          <div class="form-container">
+    
+            <div class="mass-order-button btn" onclick="showForm('Mass Orders')">Mass Orders</div>
+
+            <form action="#" method="post">
+              <textarea
+                placeholder="Service ID | Quantity | Link"
+                name="massOrderText"
+                required
+              ></textarea>
+              <br />
+              <button type="submit" class="buttonsubmit btn">Submit</button>
+            </form>
+          </div>
+          </div>
+          <div class="form-container" id="formContainer">
+            <form action="mailto:qudsia.shabbir32@gmail.com" method="post" enctype="text/plain">
+          
+        </div>
+      </div>
+    </div>
+</div>
+  <script src="../assets/js/core/jquery.min.js"></script>
+  <script src="../assets/js/core/popper.min.js"></script>
+  <script src="../assets/js/core/bootstrap.min.js"></script>
+  <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  <!--  Google Maps Plugin    -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+  <!-- Chart JS -->
+  <script src="../assets/js/plugins/chartjs.min.js"></script>
+  <!--  Notifications Plugin    -->
+  <script src="../assets/js/plugins/bootstrap-notify.js"></script>
+  <!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="../assets/js/now-ui-dashboard.min.js?v=1.5.0" type="text/javascript"></script><!-- Now Ui Dashboard DEMO methods, don't include it in your project! -->
+  <script src="../assets/demo/demo.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Javascript method's body can be found in assets/js/demos.js
+      demo.initDashboardPageCharts();
+
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+.bg-theme{
+    background: linear-gradient(to bottom, rgba(0, 255, 0, 0.5), rgba(0, 0, 255, 0.5) )  !important;
+}
+.bg-theme::before{
+    content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(0, 255, 0, 0.5), rgba(0, 0, 255, 0.5));
+}
+.top-nav-height{
+    height: 8vh !important;
+    position: relative;
+}
+.content{
+    min-height: 80vh !important;
+    margin-top: 10vh !important;
+}
